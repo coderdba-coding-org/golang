@@ -25,6 +25,13 @@ func main() {
       Usage: "Directory to list",
       EnvVar: "XDIR_NAME,YDIR_NAME",
     },
+    cli.StringFlag{
+      Name: "password, p",
+      Usage: "password for the database",
+      EnvVar: "XPASSWORD",
+      //FilePath is not working - gives error during compilation - maybe a bug
+      //FilePath: "/tmp/dbpass",
+    },
   }
 
   app.Action = func(c *cli.Context) error {
