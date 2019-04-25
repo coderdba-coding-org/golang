@@ -1,0 +1,15 @@
+echo Run1
+cli2 -f file1.txt abc def
+
+echo
+echo
+echo Run2
+cli2 -f file1.txt -d "/my/dir" abc def
+
+echo
+echo
+echo Run3
+# NOTE: environment variables must be exported
+export XCONFIG_FILE=file3.txt
+export YDIR_NAME="/my/dir3"
+cli2 abc def

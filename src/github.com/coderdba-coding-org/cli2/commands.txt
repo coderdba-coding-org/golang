@@ -1,0 +1,5 @@
+Run the executable cli2 with various flags and environment variables in the place of flags
+
+cli2
+cli2 -h
+cli2 -v
