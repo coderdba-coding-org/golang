@@ -14,7 +14,7 @@
 
 package main
 
-import "github.com/coderdba/cobra2/cmd"
+import "github.com/coderdba-coding-org/cobra2/cmd"
 
 func main() {
 	cmd.Execute()
