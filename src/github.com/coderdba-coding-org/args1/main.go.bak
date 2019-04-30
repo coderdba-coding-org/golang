@@ -6,17 +6,22 @@ import (
         "os"
 )
 
+func usage() {
+
+}
+
 func main() {  
 
     var (
-          //cmdOut is output of command comes as a byte array - do a string(cmdOut) to get string
-          cmdOut []byte
+          cmdOut []byte  //cmdOut is output of command comes as a byte array - do a string(cmdOut) to get string
           err    error
     )
     
-    
+    //fmt.Println(len(os.Args), os.Args) 
+    fmt.Printf("Program arguments - count: %d, arguments: %s \n", len(os.Args),  os.Args) 
 
-    cmd := "hostname"
+    //cmd := "hostname"
+    cmd := os.Args[1]
 
     fmt.Println ("Running a command: ", cmd)
 
@@ -32,3 +37,4 @@ func main() {
 
     fmt.Println ("Ran it well")
 }
+
