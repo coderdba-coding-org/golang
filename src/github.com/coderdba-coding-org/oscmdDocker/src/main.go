@@ -38,8 +38,8 @@ func main() {
 		os.Exit(1)
 	}
 
-    fmt.Fprintln(os.Stdout, "Hostname as bytes is: ", cmdOut)
-    fmt.Fprintln(os.Stdout, "Hostname as strings is: ",  string(cmdOut))
+    //fmt.Fprintln(os.Stdout, "Output as bytes is: ", cmdOut)
+    fmt.Fprintln(os.Stdout, "Output as strings is: \n",  string(cmdOut))
 
     fmt.Println ("Ran it well")
 }

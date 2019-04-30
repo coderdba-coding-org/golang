@@ -1,1 +1,4 @@
-run --rm gooscmd abc
+docker run --rm gooscmd:1.0 ifconfig
+echo 
+echo
+docker run --rm gooscmd:1.0 hostname

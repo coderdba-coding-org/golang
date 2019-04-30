@@ -1,1 +1,1 @@
-docker build -t gooscmd .
+docker build -t gooscmd:1.0 .
