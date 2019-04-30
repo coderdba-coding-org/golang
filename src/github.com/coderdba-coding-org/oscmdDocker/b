@@ -1,0 +1,3 @@
+#cd src; go build -o ../bin/gooscmd
+
+cd src; go build -o ../gooscmd
